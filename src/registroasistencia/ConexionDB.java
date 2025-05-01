@@ -11,7 +11,7 @@ public class ConexionDB {
 
     public static void main(String[] args) {
 
-        System.out.println("🔥 Iniciando prueba de conexión...");
+        System.out.println("🔥 Iniciando prueba de conexión..!");
         Connection conexion = null;
             try {
                 Class.forName("com.mysql.cj.jdbc.Driver");
