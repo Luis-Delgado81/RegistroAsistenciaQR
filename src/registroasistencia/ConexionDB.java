@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConexionDB {
-    private static final String URL = "jdbc:mysql://localhost:3306/registro_asistencia";
+    private static final String URL = "jdbc:mysql://localhost:3306/registro_asistencia|";
     private static final String USUARIO = "root"; // Cambia si tienes otro usuario
     private static final String CONTRASENA = ""; // Agrega la contraseña si la tienes en XAMPP
 
