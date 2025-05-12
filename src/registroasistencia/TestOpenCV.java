@@ -3,11 +3,17 @@ package registroasistencia;
 import org.opencv.core.Core;
 
 public class TestOpenCV {
-    static { System.loadLibrary(Core.NATIVE_LIBRARY_NAME); }
-
     public static void main(String[] args) {
-        
-        System.out.println("✅ OpenCV cargado correctamente.");
+        try {
+            System.out.println("🔥 Intentando cargar OpenCV...");
+            
+            System.load("D:/opencv/build/java/x64/opencv_java4110.dll");
+            
+            System.out.println("✅ OpenCV cargado correctamente.");
+        } catch (UnsatisfiedLinkError e) {
+            System.err.println("❌ Error al cargar OpenCV: " + e.getMessage());
+            e.printStackTrace();
+        }
     }
 }
 
