@@ -1,4 +1,3 @@
-
 package registroasistencia;
 
 import com.google.zxing.*;
